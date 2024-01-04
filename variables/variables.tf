@@ -1,8 +1,10 @@
 # In realtime variables.tf file is used to declare the variable name we can assign values here but we had the other option where we can assign the values to the variables
 #Hiearchy of variables:
 # command line
+# variable files(-var-file: eg: roboshop.tfvars)
 # terraform.tfvars
-# 
+# Environment variables
+# prompt terraform (if variables are not assign in above 4 areas)
 variable "ami_id" {
     type = string
     default = "ami-03265a0778a880afb"
